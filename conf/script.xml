@@ -1,0 +1,9 @@
+<?xml version='1.0'  encoding='utf8' standalone='yes' ?>
+
+<backup-script>
+  <task id="Test Script" recurse="on" mirror-delete="off" active="on" >
+    <source>U:\Users\Alastair\DEVELOPMENT\Backup Utility\Test\SOURCE</source>
+    <destination>U:\Users\Alastair\DEVELOPMENT\Backup Utility\Test\TARGET</destination>
+    <rule>changed</rule>
+  </task>
+</backup-script>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+ Backup Script File
+ 
+ Please refer to [url] for full documentation
+
+ STURCTURE 
+ Define a single backup task between <task> tags. 
+ 
+ Within the <task> tags add the following tags
+   <source> - fully qualified path to the folder you wish to backup
+   <destination> - fully qualified path to the folder where the backup files are copied to
+   <rule> - a backup rule
+
+ RULE   
+ The "rule" can take one of the following values,
+ 
+   all - all files will be copied from source to destination
+   exists - only copy files that already exist destination
+   changed - only copy source files whose timestamp is different from 
+        destination OR if destination does not exist   
+   exists changed - only copy source files whose timestamp is different from 
+        destination AND file exists on destination
+   new - only copy files that dont already exist on destination
+
+ TASK TAG ATTRIBUTES      
+ The <task> tag has attributes which take values "on" or "off", "true" or "false", "yes" or "no"
+ 
+ recurse - if set to "on", will recurse subdirectories of the source folder. 
+ mirror-delete - if set to "on", will delete files from destination that don't exist in source.
+ active - whether this rule is active or not
+
+  An example of a script XML document:
+
+    <?xml version="1.0"?>
+    <!DOCTYPE backup-script SYSTEM "script.dtd">
+
+    <backup-script>
+      <log-level>0</log-level>
+      <log-folder>1</log-folder>
+      <task recurse="on" mirror-delete="on" active="on">
+        <source>F:/source/</source>
+        <destination>F:/destination</destination>
+        <rule>all</rule>
+      </task>
+    </backup-script>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT rule (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT destination (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT source (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT task (source,destination,rule)>
+<!ATTLIST task
+    id CDATA #IMPLIED
+    active (on|off|true|false|yes|no) #REQUIRED
+    mirror-delete (on|off|true|false|yes|no) #REQUIRED
+    recurse (on|off|true|false|yes|no) #REQUIRED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT backup-script (task)*>

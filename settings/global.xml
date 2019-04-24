@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf8' standalone='yes' ?>
+<settings>
+  <!-- ======================== comment ============================== -->
+
+<log-level>0</log-level>
+<locale>en_GB</locale>
+
+<folders>
+  <batch-file>null</batch-file>
+  <batch-folder>C:\MY STUFF\Development\Eclipse\Europa\BackupUtilityGUI\schedule packages</batch-folder>
+  <jar-file>C:\MY STUFF\Development\Eclipse\Europa\BackupUtilityGUI\lib</jar-file>
+  <java-home>C:\Program Files\Java\jre1.6.0_01</java-home>
+  <log>C:\MY STUFF\Development\Eclipse\Europa\BackupUtilityGUI\log</log>
+  <script>C:\MY STUFF\Development\Backup Utility Testing Ground\conf</script>
+</folders>
+
+<recent-file-list>
+  <file>C:\MY STUFF\Development\Backup Utility Testing Ground\conf\script.xml</file>
+</recent-file-list>
+
+<table-column-sizes>
+  <col>100</col>
+  <col>100</col>
+  <col>100</col>
+  <col>100</col>
+  <col>100</col>
+  <col>100</col>
+  <col>100</col>
+</table-column-sizes>
+
+<window>
+  <height>600</height>
+  <width>800</width>
+  <location-x>166</location-x>
+  <location-y>130</location-y>
+  <font>
+    <name>Arial</name>
+    <size>10</size>
+    <style>0</style>
+  </font>
+  <sash>
+    <lower>500</lower>
+    <upper>500</upper>
+  </sash>
+</window>
+</settings>
